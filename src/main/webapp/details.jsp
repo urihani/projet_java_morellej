@@ -7,6 +7,8 @@
 </head>
 <body>
 
+<jsp:include page='<%= application.getInitParameter("header")%>'/>
+
 <h1>Projet - étape 2</h1>
 <h2>fiche détaillée d'un étudiant</h2>
 
@@ -17,6 +19,8 @@
 <br>
 
 <a href="index.jsp">Retour à la liste des étudiants</a>
+
+<jsp:include page='<%= application.getInitParameter("footer")%>'/>
 
 </body>
 </html>

@@ -12,8 +12,13 @@
 
     <!-- URLs communes aux vues -->
     <context-param>
-        <param-name>entetedepage</param-name>
-        <param-value>/WEB-INF/JSP/commun/entetedepage.jsp</param-value>
+        <param-name>header</param-name>
+        <param-value>/WEB-INF/JSP/Common/header.jsp</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>footer</param-name>
+        <param-value>/WEB-INF/JSP/Common/footer.jsp</param-value>
     </context-param>
 
 </web-app>

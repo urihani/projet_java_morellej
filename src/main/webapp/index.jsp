@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<jsp:include page='<%= application.getInitParameter("header")%>'/>
+
 <h1>Projet - étape 2</h1>
 <h2>Liste des étudiants</h2>
 
@@ -16,6 +18,8 @@
     <a href="ServletTraitementDetails?id=<%=etudiant.getId()%>"><%=etudiant.getPrenom()%> <%=etudiant.getNom()%></a>
 </div>
 <% } %>
+
+<jsp:include page='<%= application.getInitParameter("footer")%>'/>
 
 </body>
 </html>

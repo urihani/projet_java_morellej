@@ -1,28 +1,18 @@
-<%@ page import="com.iut2.projet_java_morellej.Etudiant" %>
-<%@ page import="com.iut2.projet_java_morellej.GestionFactory" %><%
-    int id = Integer.valueOf(request.getParameter("id"));
-    Etudiant etudiant = GestionFactory.getEtudiantById(id);
-%><%--
-  Created by IntelliJ IDEA.
-  User: julienmorelle
-  Date: 06/12/2022
-  Time: 14:06
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<jsp:useBean id="etudiant" class="com.iut2.projet_java_morellej.Etudiant" scope="request"/>
+<jsp:useBean id="nbAbsences" type="java.lang.Integer" scope="request"/>
 <html>
 <head>
-    <title>Title</title>
+    <title><%= application.getInitParameter("title")%></title>
 </head>
 <body>
 
-<h1>Projet - étape 1</h1>
-
+<h1>Projet - étape 2</h1>
 <h2>fiche détaillée d'un étudiant</h2>
 
-<div>Nom : <%=etudiant.getNom()%></div>
-<div>Prénom : <%=etudiant.getPrenom()%></div>
-<div>Nombre d'absences : <%=GestionFactory.getAbsencesByEtudiantId(id)%></div>
+<div>Nom : <jsp:getProperty name="etudiant" property="nom"/></div>
+<div>Prénom : <jsp:getProperty name="etudiant" property="prenom"/></div>
+<div>Nombre d'absences : <%=nbAbsences%></div>
 
 <br>
 

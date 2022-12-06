@@ -4,17 +4,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title><%= application.getInitParameter("title")%></title>
 </head>
 <body>
 
-<h1>Projet - étape 1</h1>
-
+<h1>Projet - étape 2</h1>
 <h2>Liste des étudiants</h2>
 
 <% for(Etudiant etudiant : GestionFactory.getEtudiants()) { %>
 <div>
-    <a href="details.jsp?id=<%=etudiant.getId()%>"><%=etudiant.getPrenom()%> <%=etudiant.getNom()%></a>
+    <a href="ServletTraitementDetails?id=<%=etudiant.getId()%>"><%=etudiant.getPrenom()%> <%=etudiant.getNom()%></a>
 </div>
 <% } %>
 

@@ -3,4 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+
+    <!-- Titre de l'application -->
+    <context-param>
+        <param-name>title</param-name>
+        <param-value>Gestionnaire d'absences</param-value>
+    </context-param>
+
+    <!-- URLs communes aux vues -->
+    <context-param>
+        <param-name>entetedepage</param-name>
+        <param-value>/WEB-INF/JSP/commun/entetedepage.jsp</param-value>
+    </context-param>
+
 </web-app>

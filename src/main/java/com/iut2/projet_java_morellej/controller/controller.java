@@ -1,5 +1,7 @@
 package com.iut2.projet_java_morellej.controller;
 
+import com.iut2.projet_java_morellej.Etudiant;
+import com.iut2.projet_java_morellej.GestionFactory;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
@@ -48,7 +50,7 @@ public class controller extends HttpServlet {
         if (methode.equals("get") && action.equals("/index")) {
             doIndex(request, response);
 
-        } else if (methode.equals("post") && action.equals("/details")) {
+        } else if (methode.equals("get") && action.equals("/details")) {
             doDetails(request, response);
 
         } else {
@@ -60,14 +62,24 @@ public class controller extends HttpServlet {
     //
     private void doIndex(HttpServletRequest request,
                        HttpServletResponse response) throws ServletException, IOException {
-
-
         loadJSP(urlIndex, request, response);
     }
 
     //
     private void doDetails(HttpServletRequest request,
                             HttpServletResponse response) throws ServletException, IOException {
+        // Récupérer l'id
+        int id = Integer.valueOf(request.getParameter("id"));
+
+        // Récupérer les détails
+        Etudiant etudiant = GestionFactory.getEtudiantById(id);
+        Integer nbAbsences = GestionFactory.getAbsencesByEtudiantId(id);
+
+        // Mettre les détails dans la requête
+        request.setAttribute("etudiant", etudiant);
+        request.setAttribute("nbAbsences", nbAbsences);
+
+        // Forward vers details.jsp
         loadJSP(urlDetails, request, response);
     }
 

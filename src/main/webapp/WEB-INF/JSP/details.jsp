@@ -18,7 +18,7 @@
 
 <br>
 
-<a href="index.jsp">Retour à la liste des étudiants</a>
+<a href="<%= application.getContextPath()%>/do/index">Retour à la liste des étudiants</a>
 
 <jsp:include page='<%= application.getInitParameter("footer")%>'/>
 

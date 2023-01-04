@@ -15,7 +15,7 @@
 
 <% for(Etudiant etudiant : GestionFactory.getEtudiants()) { %>
 <div>
-    <a href="ServletTraitementDetails?id=<%=etudiant.getId()%>"><%=etudiant.getPrenom()%> <%=etudiant.getNom()%></a>
+    <a href="<%= application.getContextPath()%>/do/details?id=<%=etudiant.getId()%>"><%=etudiant.getPrenom()%> <%=etudiant.getNom()%></a>
 </div>
 <% } %>
 

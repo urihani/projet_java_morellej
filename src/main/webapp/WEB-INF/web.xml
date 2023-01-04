@@ -21,4 +21,29 @@
         <param-value>/WEB-INF/JSP/Common/footer.jsp</param-value>
     </context-param>
 
+    <!-- Servlet controleur -->
+    <servlet>
+        <servlet-name>controller</servlet-name>
+        <servlet-class>com.iut2.projet_java_morellej.controller.controller</servlet-class>
+        <init-param>
+            <param-name>urlIndex</param-name>
+            <param-value>/WEB-INF/JSP/index.jsp</param-value>
+        </init-param>
+        <init-param>
+            <param-name>urlDetails</param-name>
+            <param-value>/WEB-INF/JSP/details.jsp</param-value>
+        </init-param>
+    </servlet>
+
+    <!-- Mapping URL/Servlet -->
+    <servlet-mapping>
+        <servlet-name>controller</servlet-name>
+        <url-pattern>/do/*</url-pattern>
+    </servlet-mapping>
+
+    <!--  fichiers d'accueil -->
+    <welcome-file-list>
+        <welcome-file>do</welcome-file>
+    </welcome-file-list>
+
 </web-app>

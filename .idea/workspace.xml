@@ -9,19 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02a9eaba-5a04-4a5a-bba3-d580a704cde4" name="Changes" comment="Redirection vers la page de détails">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/Common/layout.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/etudiants.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/notes.jsp" afterDir="false" />
+    <list default="true" id="02a9eaba-5a04-4a5a-bba3-d580a704cde4" name="Changes" comment="Changement de l'affichage des pages existantes + ajout du groupe + footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/Etudiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/Etudiant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/GestionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/GestionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/controller/controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/Common/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/Common/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/Common/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/Common/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +192,7 @@
       <updated>1670331235896</updated>
       <workItem from="1670331236955" duration="9078000" />
       <workItem from="1672835556717" duration="7783000" />
-      <workItem from="1672921797231" duration="2872000" />
+      <workItem from="1672921797231" duration="3766000" />
     </task>
     <task id="LOCAL-00001" summary="Init - Projet 1">
       <created>1670335296324</created>
@@ -231,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672840482507</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changement de l'affichage des pages existantes + ajout du groupe + footer">
+      <created>1672924754721</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672924754721</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +252,7 @@
     <MESSAGE value="Implémentation du header et du footer (include - contenu &quot;placeholder&quot;)" />
     <MESSAGE value="Implémentation du controleur pour changer de pages" />
     <MESSAGE value="Redirection vers la page de détails" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redirection vers la page de détails" />
+    <MESSAGE value="Changement de l'affichage des pages existantes + ajout du groupe + footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changement de l'affichage des pages existantes + ajout du groupe + footer" />
   </component>
 </project>

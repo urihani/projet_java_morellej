@@ -77,10 +77,16 @@ public class controller extends HttpServlet {
         // Récupérer les détails
         Etudiant etudiant = GestionFactory.getEtudiantById(id);
         Integer nbAbsences = GestionFactory.getAbsencesByEtudiantId(id);
+        String nom = etudiant.getNom();
+        String prenom = etudiant.getPrenom();
+        String groupe = etudiant.getGroupe();
 
         // Mettre les détails dans la requête
         request.setAttribute("etudiant", etudiant);
         request.setAttribute("nbAbsences", nbAbsences);
+        request.setAttribute("nom", nom);
+        request.setAttribute("prenom", prenom);
+        request.setAttribute("groupe", groupe);
 
         // Forward vers details.jsp
         request.setAttribute("content", urlDetails);

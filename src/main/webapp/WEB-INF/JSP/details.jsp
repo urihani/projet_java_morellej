@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:useBean id="etudiant" class="com.iut2.projet_java_morellej.Etudiant" scope="request"/>
 <jsp:useBean id="nbAbsences" type="java.lang.Integer" scope="request"/>
+<jsp:useBean id="moyenne" type="java.lang.Integer" scope="request"/>
 <jsp:useBean id="nom" class="java.lang.String" scope="request"/>
 <jsp:useBean id="prenom" class="java.lang.String" scope="request"/>
 <jsp:useBean id="groupe" class="java.lang.String" scope="request"/>
@@ -17,6 +18,9 @@
     <%=prenom%>
 </div>
 <div>Nombre d'absences : <%=nbAbsences%>
+</div>
+<div>Moyenne :
+    <%=moyenne%>
 </div>
 
 <br>

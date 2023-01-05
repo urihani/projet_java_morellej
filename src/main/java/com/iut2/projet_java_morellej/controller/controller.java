@@ -77,6 +77,7 @@ public class controller extends HttpServlet {
         // Récupérer les détails
         Etudiant etudiant = GestionFactory.getEtudiantById(id);
         Integer nbAbsences = GestionFactory.getAbsencesByEtudiantId(id);
+        Integer moyenne = etudiant.getMoyenne();
         String nom = etudiant.getNom();
         String prenom = etudiant.getPrenom();
         String groupe = etudiant.getGroupe();
@@ -84,6 +85,7 @@ public class controller extends HttpServlet {
         // Mettre les détails dans la requête
         request.setAttribute("etudiant", etudiant);
         request.setAttribute("nbAbsences", nbAbsences);
+        request.setAttribute("moyenne", moyenne);
         request.setAttribute("nom", nom);
         request.setAttribute("prenom", prenom);
         request.setAttribute("groupe", groupe);

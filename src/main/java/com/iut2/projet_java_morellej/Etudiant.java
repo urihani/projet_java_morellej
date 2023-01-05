@@ -6,17 +6,19 @@ public class Etudiant {
 	private String prenom;
 	private String nom;
 	private String groupe;
+	private Integer moyenne;
 	
 	public Etudiant() {
 		super();
 	}
 	
-	public Etudiant(Integer id, String prenom, String nom, String groupe) {
+	public Etudiant(Integer id, String prenom, String nom, String groupe, Integer moyenne) {
 		super();
 		this.id = id;
 		this.prenom = prenom;
 		this.nom = nom;
 		this.groupe = groupe;
+		this.moyenne = moyenne;
 	}
 
 	public Integer getId() {
@@ -49,5 +51,13 @@ public class Etudiant {
 
 	public void setGroupe(String groupe) {
 		this.groupe = groupe;
+	}
+
+	public Integer getMoyenne() {
+		return moyenne;
+	}
+
+	public void setMoyenne(Integer moyenne) {
+		this.moyenne = moyenne;
 	}
 }

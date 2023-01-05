@@ -9,8 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02a9eaba-5a04-4a5a-bba3-d580a704cde4" name="Changes" comment="Changement de l'affichage des pages existantes + ajout du groupe + footer">
+    <list default="true" id="02a9eaba-5a04-4a5a-bba3-d580a704cde4" name="Changes" comment="Attributs envoyés par le contrôleur">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/Etudiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/Etudiant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/GestionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/GestionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/controller/controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/details.jsp" afterDir="false" />
     </list>
@@ -192,7 +194,7 @@
       <updated>1670331235896</updated>
       <workItem from="1670331236955" duration="9078000" />
       <workItem from="1672835556717" duration="7783000" />
-      <workItem from="1672921797231" duration="3766000" />
+      <workItem from="1672921797231" duration="4043000" />
     </task>
     <task id="LOCAL-00001" summary="Init - Projet 1">
       <created>1670335296324</created>
@@ -229,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672924754721</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Attributs envoyés par le contrôleur">
+      <created>1672925636095</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672925636095</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +262,7 @@
     <MESSAGE value="Implémentation du controleur pour changer de pages" />
     <MESSAGE value="Redirection vers la page de détails" />
     <MESSAGE value="Changement de l'affichage des pages existantes + ajout du groupe + footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changement de l'affichage des pages existantes + ajout du groupe + footer" />
+    <MESSAGE value="Attributs envoyés par le contrôleur" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attributs envoyés par le contrôleur" />
   </component>
 </project>

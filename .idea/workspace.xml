@@ -9,12 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02a9eaba-5a04-4a5a-bba3-d580a704cde4" name="Changes" comment="Attributs envoyés par le contrôleur">
+    <list default="true" id="02a9eaba-5a04-4a5a-bba3-d580a704cde4" name="Changes" comment="Ajout de la moyenne">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/Etudiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/Etudiant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/GestionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/GestionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iut2/projet_java_morellej/controller/controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/etudiants.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/etudiants.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/notes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/notes.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +194,7 @@
       <updated>1670331235896</updated>
       <workItem from="1670331236955" duration="9078000" />
       <workItem from="1672835556717" duration="7783000" />
-      <workItem from="1672921797231" duration="4043000" />
+      <workItem from="1672921797231" duration="4775000" />
     </task>
     <task id="LOCAL-00001" summary="Init - Projet 1">
       <created>1670335296324</created>
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672925636095</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ajout de la moyenne">
+      <created>1672925943428</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672925943428</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +270,7 @@
     <MESSAGE value="Redirection vers la page de détails" />
     <MESSAGE value="Changement de l'affichage des pages existantes + ajout du groupe + footer" />
     <MESSAGE value="Attributs envoyés par le contrôleur" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attributs envoyés par le contrôleur" />
+    <MESSAGE value="Ajout de la moyenne" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la moyenne" />
   </component>
 </project>

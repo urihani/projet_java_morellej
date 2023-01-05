@@ -17,7 +17,7 @@ public class GestionFactory {
 
 		// Création des étudiants
 		Etudiant etu1 = new Etudiant(0, "Francis", "Brunet-Manquat", "MIAM", 16);
-		Etudiant etu2 = new Etudiant(1, "Philippe", "Martin", "AW", 12);
+		Etudiant etu2 = new Etudiant(1, "Philippe", "Martin", "AW", 6);
 
 		// Création du hasmap (association clé/valeur)
 		// Association id -> etudiant

@@ -65,12 +65,15 @@ public class controller extends HttpServlet {
     private void doIndex(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("content", urlIndex);
+        request.setAttribute("url", "index");
         loadJSP("/WEB-INF/JSP/Common/layout.jsp", request, response);
     }
 
     //
     private void doDetails(HttpServletRequest request,
                            HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("url", "details");
+
         // Récupérer l'id
         int id = Integer.valueOf(request.getParameter("id"));
 
@@ -98,6 +101,8 @@ public class controller extends HttpServlet {
     //
     private void doEtudiants(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("url", "etudiants");
+
         request.setAttribute("content", urlEtudiants);
         loadJSP("/WEB-INF/JSP/Common/layout.jsp", request, response);
     }

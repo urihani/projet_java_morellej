@@ -9,9 +9,14 @@
 <ul class="list-group list-group-light">
     <% for (Etudiant etudiant : GestionFactory.getEtudiants()) { %>
     <li class="list-group-item d-flex justify-content-between align-items-center">
-        <a href="<%= application.getContextPath()%>/do/details?id=<%=etudiant.getId()%>"><%=etudiant.getPrenom()%> <%=etudiant.getNom()%>
+        <div>
+            <span class="badge badge-primary me-2"><%=etudiant.getGroupe()%></span>
+            <span class="text-secondary"><%=etudiant.getPrenom()%> <%=etudiant.getNom()%></span>
+        </div>
+
+        <a href="<%= application.getContextPath()%>/do/details?id=<%=etudiant.getId()%>">
+            <button type="button" class="btn btn-primary">Détails</button>
         </a>
-        <span class="badge badge-primary"><%=etudiant.getGroupe()%></span>
     </li>
     <% } %>
 </ul>

@@ -15,11 +15,13 @@ public class controller extends HttpServlet {
     // URL
     private String urlIndex;
     private String urlDetails;
+    private String urlEtudiants;
 
     // INIT
     public void init() throws ServletException {
         urlIndex = getInitParameter("urlIndex");
         urlDetails = getInitParameter("urlDetails");
+        urlEtudiants = getInitParameter("urlEtudiants");
     }
 
     // POST
@@ -49,10 +51,10 @@ public class controller extends HttpServlet {
         // Exécution action
         if (methode.equals("get") && action.equals("/index")) {
             doIndex(request, response);
-
         } else if (methode.equals("get") && action.equals("/details")) {
             doDetails(request, response);
-
+        } else if (methode.equals("get") && action.equals("/etudiants")) {
+            doEtudiants(request, response);
         } else {
             // Autres cas
             doIndex(request, response);
@@ -61,13 +63,14 @@ public class controller extends HttpServlet {
 
     //
     private void doIndex(HttpServletRequest request,
-                       HttpServletResponse response) throws ServletException, IOException {
-        loadJSP(urlIndex, request, response);
+                         HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("content", urlIndex);
+        loadJSP("/WEB-INF/JSP/Common/layout.jsp", request, response);
     }
 
     //
     private void doDetails(HttpServletRequest request,
-                            HttpServletResponse response) throws ServletException, IOException {
+                           HttpServletResponse response) throws ServletException, IOException {
         // Récupérer l'id
         int id = Integer.valueOf(request.getParameter("id"));
 
@@ -80,7 +83,15 @@ public class controller extends HttpServlet {
         request.setAttribute("nbAbsences", nbAbsences);
 
         // Forward vers details.jsp
-        loadJSP(urlDetails, request, response);
+        request.setAttribute("content", urlDetails);
+        loadJSP("/WEB-INF/JSP/Common/layout.jsp", request, response);
+    }
+
+    //
+    private void doEtudiants(HttpServletRequest request,
+                         HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("content", urlEtudiants);
+        loadJSP("/WEB-INF/JSP/Common/layout.jsp", request, response);
     }
 
     /**

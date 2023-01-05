@@ -21,6 +21,11 @@
         <param-value>/WEB-INF/JSP/Common/footer.jsp</param-value>
     </context-param>
 
+    <context-param>
+        <param-name>layout</param-name>
+        <param-value>/WEB-INF/JSP/Common/layout.jsp</param-value>
+    </context-param>
+
     <!-- Servlet controleur -->
     <servlet>
         <servlet-name>controller</servlet-name>
@@ -32,6 +37,10 @@
         <init-param>
             <param-name>urlDetails</param-name>
             <param-value>/WEB-INF/JSP/details.jsp</param-value>
+        </init-param>
+        <init-param>
+            <param-name>urlEtudiants</param-name>
+            <param-value>/WEB-INF/JSP/etudiants.jsp</param-value>
         </init-param>
     </servlet>
 

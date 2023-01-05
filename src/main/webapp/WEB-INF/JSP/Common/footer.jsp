@@ -6,4 +6,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<h1>Footer</h1>
+<footer class="bg-light text-center text-lg-start fixed-bottom">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022-2023 - Module J2EE
+    </div>
+    <!-- Copyright -->
+</footer>

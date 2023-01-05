@@ -1,26 +1,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:useBean id="etudiant" class="com.iut2.projet_java_morellej.Etudiant" scope="request"/>
 <jsp:useBean id="nbAbsences" type="java.lang.Integer" scope="request"/>
-<html>
-<head>
-    <title><%= application.getInitParameter("title")%></title>
-</head>
-<body>
 
-<jsp:include page='<%= application.getInitParameter("header")%>'/>
+<h2>Fiche de <jsp:getProperty name="etudiant" property="prenom"/> <jsp:getProperty name="etudiant" property="nom"/></h2>
 
-<h1>Projet - étape 2</h1>
-<h2>fiche détaillée d'un étudiant</h2>
+<hr class="hr" />
 
-<div>Nom : <jsp:getProperty name="etudiant" property="nom"/></div>
-<div>Prénom : <jsp:getProperty name="etudiant" property="prenom"/></div>
-<div>Nombre d'absences : <%=nbAbsences%></div>
+<span class="badge badge-primary"><jsp:getProperty name="etudiant" property="groupe"/></span>
+<div>Nom :
+    <jsp:getProperty name="etudiant" property="nom"/>
+</div>
+<div>Prénom :
+    <jsp:getProperty name="etudiant" property="prenom"/>
+</div>
+<div>Nombre d'absences : <%=nbAbsences%>
+</div>
 
 <br>
 
 <a href="<%= application.getContextPath()%>/do/index">Retour à la liste des étudiants</a>
-
-<jsp:include page='<%= application.getInitParameter("footer")%>'/>
-
-</body>
-</html>
